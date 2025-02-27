@@ -1,119 +1,1414 @@
 {
-    "agents": [
+  "agents": [
     {
-        "name": "Norma",
-        "motive": {
-            "accomplishment": 2,
-            "social": 1,
-            "physical": 4,
-            "emotional": 3,
-            "financial": 5
+      "name": "EmergencyManager",
+      "motive": {
+        "accomplishment": 5,
+        "social": 5,
+        "physical": 5,
+        "emotional": 5,
+        "financial": 5
+      },
+      "currentLocation": { "xPos": 0, "yPos": 0 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 5, "yPos": 4 },
+      "relationships": [
+        { "type": "friend", "with": "Agent2", "valence": 3 }
+      ],
+      "finances": 3,
+      "workIncome": 0.1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0.0,
+          "65Plus": 0.0,
+          "Inaccessible": 0.0,
+          "NonNativeSpeaker": 0.0
         },
-        "currentLocation": {
-            "xPos": 0,
-            "yPos": 0
+        "motivationToEvacuate": {
+          "StormSurge": 1,
+          "PriorEvacuation": 1,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 1,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 1,
+          "EmergencyKeyword": 1,
+          "StormSurgeKeyword": 1,
+          "KatrinaKeyword": 1,
+          "HasFamilyOutside": 1,
+          "Children": 1
         },
-        "occupiedCounter": 0,
-        "currentAction": "wait_action",
-        "destination": {
-            "xPos": 5,
-            "yPos": 4
-        },
-        "relationships": [
-            { "type": "friend", "with": "Quentin", "valence": 3 },
-            { "type": "student-of", "with": "MathProf", "valence":1}
-        ]
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
     },
     {
-        "name": "Abnorma",
-        "motive": {
-            "accomplishment": 1,
-            "social": 4,
-            "physical": 4,
-            "emotional": 5,
-            "financial": 5
+      "name": "Agent2",
+      "motive": {
+        "accomplishment": 3,
+        "social": 2,
+        "physical": 3,
+        "emotional": 3,
+        "financial": 3
+      },
+      "currentLocation": { "xPos": 1, "yPos": 0 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 5, "yPos": 4 },
+      "relationships": [
+        { "type": "friend", "with": "Agent3", "valence": 3 }
+      ],
+      "finances": 3,
+      "workIncome": 0.1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0.25,
+          "65Plus": 0.0,
+          "Inaccessible": 0.0,
+          "NonNativeSpeaker": 0.0
         },
-        "currentLocation": {
-            "xPos": 0,
-            "yPos": 4
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
         },
-        "occupiedCounter": 0,
-        "currentAction": "wait_action",
-        "destination": {
-            "xPos": 5,
-            "yPos": 4
-        },
-        "relationships": [
-            { "type": "enemy", "with": "Quentin", "valence": 3 },
-            { "type": "student-of", "with": "PhysicsProf", "valence":1}
-        ]
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0.1,
+          "TerritorialMarkers": 0.1,
+          "ConspiracyKeyword": 0
+        }
+      }
     },
     {
-        "name": "Quentin",
-        "motive": {
-            "accomplishment": 4,
-            "social": 2,
-            "physical": 1,
-            "emotional": 1,
-            "financial": 5
+      "name": "Agent3",
+      "motive": {
+        "accomplishment": 2,
+        "social": 3,
+        "physical": 4,
+        "emotional": 2,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 2, "yPos": 0 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 6, "yPos": 4 },
+      "relationships": [
+        { "type": "friend", "with": "Agent4", "valence": 3 }
+      ],
+      "finances": 3,
+      "workIncome": 0.1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0.25,
+          "65Plus": 0.0,
+          "Inaccessible": 0.0,
+          "NonNativeSpeaker": 0.0
         },
-        "currentLocation": {
-            "xPos": 0,
-            "yPos": 0
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
         },
-        "occupiedCounter": 0,
-        "currentAction": "wait_action",
-        "destination": {
-            "xPos": 5,
-            "yPos": 5
-        },
-        "relationships": [
-            { "type": "friend", "with": "Norma", "valence": 3 },
-            { "type": "student-of", "with": "PhysicsProf", "valence":1}
-        ]
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0.1,
+          "TerritorialMarkers": 0.1,
+          "ConspiracyKeyword": 0
+        }
+      }
     },
     {
-        "name": "MathProf",
-        "motive": {
-            "accomplishment": 5,
-            "social": 5,
-            "physical": 5,
-            "emotional": 5,
-            "financial": 5
+      "name": "Agent4",
+      "motive": {
+        "accomplishment": 4,
+        "social": 3,
+        "physical": 2,
+        "emotional": 4,
+        "financial": 3
+      },
+      "currentLocation": { "xPos": 3, "yPos": 0 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 6, "yPos": 5 },
+      "relationships": [
+        { "type": "friend", "with": "Agent5", "valence": 3 }
+      ],
+      "finances": 3,
+      "workIncome": 0.1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0.1,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
         },
-        "currentLocation": {
-            "xPos": 1,
-            "yPos": 1
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
         },
-        "occupiedCounter": 0,
-        "currentAction": "wait_action",
-        "destination": {
-            "xPos": 5,
-            "yPos": 5
-        },
-        "relationships": [
-        ]
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0.1,
+          "TerritorialMarkers": 0.1,
+          "ConspiracyKeyword": 0
+        }
+      }
     },
     {
-        "name": "PhysicsProf",
-        "motive": {
-            "accomplishment": 5,
-            "social": 5,
-            "physical": 5,
-            "emotional": 5,
-            "financial": 5
+      "name": "Agent5",
+      "motive": {
+        "accomplishment": 3,
+        "social": 4,
+        "physical": 3,
+        "emotional": 2,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 4, "yPos": 0 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 7, "yPos": 5 },
+      "relationships": [
+        { "type": "friend", "with": "Agent6", "valence": 3 }
+      ],
+      "finances": 3,
+      "workIncome": 0.1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0.1,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
         },
-        "currentLocation": {
-            "xPos": 1,
-            "yPos": 3
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
         },
-        "occupiedCounter": 0,
-        "currentAction": "wait_action",
-        "destination": {
-            "xPos": 5,
-            "yPos": 5
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0.1,
+          "TerritorialMarkers": 0.1,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent6",
+      "motive": {
+        "accomplishment": 4,
+        "social": 3,
+        "physical": 3,
+        "emotional": 3,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 5, "yPos": 0 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 7, "yPos": 6 },
+      "relationships": [
+        { "type": "friend", "with": "Agent7", "valence": 3 }
+      ],
+      "finances": 3,
+      "workIncome": 0.1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0.1,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
         },
-        "relationships": [
-        ]
-    }]
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0.1,
+          "TerritorialMarkers": 0.1,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent7",
+      "motive": {
+        "accomplishment": 3,
+        "social": 3,
+        "physical": 3,
+        "emotional": 4,
+        "financial": 3
+      },
+      "currentLocation": { "xPos": 6, "yPos": 1 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 8, "yPos": 5 },
+      "relationships": [
+        { "type": "friend", "with": "Agent8", "valence": 3 }
+      ],
+      "finances": 3,
+      "workIncome": 1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0.3,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0.3,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent8",
+      "motive": {
+        "accomplishment": 4,
+        "social": 2,
+        "physical": 3,
+        "emotional": 3,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 7, "yPos": 1 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 8, "yPos": 6 },
+      "relationships": [
+        { "type": "friend", "with": "Agent9", "valence": 3 }
+      ],
+      "finances": 3,
+      "workIncome": 1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0.3,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0.3,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent9",
+      "motive": {
+        "accomplishment": 3,
+        "social": 4,
+        "physical": 3,
+        "emotional": 2,
+        "financial": 3
+      },
+      "currentLocation": { "xPos": 8, "yPos": 1 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 9, "yPos": 6 },
+      "relationships": [
+        { "type": "friend", "with": "Agent10", "valence": 3 }
+      ],
+      "finances": 3,
+      "workIncome": 1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0.3,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0.3,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent10",
+      "motive": {
+        "accomplishment": 4,
+        "social": 3,
+        "physical": 2,
+        "emotional": 4,
+        "financial": 3
+      },
+      "currentLocation": { "xPos": 9, "yPos": 1 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 9, "yPos": 7 },
+      "relationships": [
+        { "type": "friend", "with": "Agent11", "valence": 3 }
+      ],
+      "finances": 3,
+      "workIncome": 1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0.3,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0.3,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent11",
+      "motive": {
+        "accomplishment": 3,
+        "social": 2,
+        "physical": 4,
+        "emotional": 3,
+        "financial": 3
+      },
+      "currentLocation": { "xPos": 10, "yPos": 2 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 10, "yPos": 7 },
+      "relationships": [
+        { "type": "friend", "with": "Agent12", "valence": 3 }
+      ],
+      "finances": 5,
+      "workIncome": 1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0.1
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent12",
+      "motive": {
+        "accomplishment": 4,
+        "social": 3,
+        "physical": 3,
+        "emotional": 3,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 11, "yPos": 2 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 10, "yPos": 8 },
+      "relationships": [
+        { "type": "friend", "with": "Agent13", "valence": 3 }
+      ],
+      "finances": 5,
+      "workIncome": 1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0.1
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0.3,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent13",
+      "motive": {
+        "accomplishment": 3,
+        "social": 4,
+        "physical": 3,
+        "emotional": 2,
+        "financial": 3
+      },
+      "currentLocation": { "xPos": 12, "yPos": 2 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 11, "yPos": 8 },
+      "relationships": [
+        { "type": "friend", "with": "Agent14", "valence": 3 }
+      ],
+      "finances": 5,
+      "workIncome": 1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0.1
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0.3,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent14",
+      "motive": {
+        "accomplishment": 4,
+        "social": 3,
+        "physical": 2,
+        "emotional": 4,
+        "financial": 3
+      },
+      "currentLocation": { "xPos": 13, "yPos": 2 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 11, "yPos": 9 },
+      "relationships": [
+        { "type": "friend", "with": "Agent15", "valence": 3 }
+      ],
+      "finances": 5,
+      "workIncome": 1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0.3,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0.1,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent15",
+      "motive": {
+        "accomplishment": 3,
+        "social": 4,
+        "physical": 3,
+        "emotional": 3,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 14, "yPos": 2 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 12, "yPos": 9 },
+      "relationships": [
+        { "type": "friend", "with": "Agent16", "valence": 3 }
+      ],
+      "finances": 5,
+      "workIncome": 1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0.3,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0.1,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent16",
+      "motive": {
+        "accomplishment": 4,
+        "social": 3,
+        "physical": 3,
+        "emotional": 4,
+        "financial": 3
+      },
+      "currentLocation": { "xPos": 15, "yPos": 2 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 12, "yPos": 10 },
+      "relationships": [
+        { "type": "friend", "with": "Agent17", "valence": 3 }
+      ],
+      "finances": 5,
+      "workIncome": 1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0.3,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0.1,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent17",
+      "motive": {
+        "accomplishment": 3,
+        "social": 4,
+        "physical": 2,
+        "emotional": 3,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 16, "yPos": 2 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 13, "yPos": 10 },
+      "relationships": [
+        { "type": "friend", "with": "Agent18", "valence": 3 }
+      ],
+      "finances": 5,
+      "workIncome": 1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0.3,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0.1,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent18",
+      "motive": {
+        "accomplishment": 4,
+        "social": 3,
+        "physical": 3,
+        "emotional": 3,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 17, "yPos": 2 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 13, "yPos": 11 },
+      "relationships": [
+        { "type": "friend", "with": "Agent19", "valence": 3 }
+      ],
+      "finances": 5,
+      "workIncome": 1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0.3,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0.1,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent19",
+      "motive": {
+        "accomplishment": 3,
+        "social": 2,
+        "physical": 4,
+        "emotional": 3,
+        "financial": 3
+      },
+      "currentLocation": { "xPos": 18, "yPos": 2 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 14, "yPos": 11 },
+      "relationships": [
+        { "type": "friend", "with": "Agent20", "valence": 3 }
+      ],
+      "finances": 5,
+      "workIncome": 1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0.3,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0.1,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent20",
+      "motive": {
+        "accomplishment": 4,
+        "social": 3,
+        "physical": 3,
+        "emotional": 4,
+        "financial": 3
+      },
+      "currentLocation": { "xPos": 19, "yPos": 2 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 14, "yPos": 12 },
+      "relationships": [
+        { "type": "friend", "with": "Agent21", "valence": 3 }
+      ],
+      "finances": 5,
+      "workIncome": 1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0.1,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0.1,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent21",
+      "motive": {
+        "accomplishment": 3,
+        "social": 4,
+        "physical": 3,
+        "emotional": 3,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 20, "yPos": 3 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 15, "yPos": 12 },
+      "relationships": [
+        { "type": "friend", "with": "Agent22", "valence": 3 }
+      ],
+      "finances": 5,
+      "workIncome": 1,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0.1,
+          "KnownEvacuation": 0.3,
+          "UnknownEvacuation": 0.2,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0.3,
+          "StormSurgeKeyword": 0.2,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0.3
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0.4,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0.1,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent22",
+      "motive": {
+        "accomplishment": 4,
+        "social": 3,
+        "physical": 4,
+        "emotional": 3,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 21, "yPos": 3 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 15, "yPos": 13 },
+      "relationships": [
+        { "type": "friend", "with": "Agent23", "valence": 3 }
+      ],
+      "finances": 7,
+      "workIncome": 3,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0,
+          "UnknownEvacuation": 0.2,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0,
+          "StormSurgeKeyword": 0,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0.2,
+          "Children": 0
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent23",
+      "motive": {
+        "accomplishment": 3,
+        "social": 4,
+        "physical": 3,
+        "emotional": 3,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 22, "yPos": 3 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 16, "yPos": 13 },
+      "relationships": [
+        { "type": "friend", "with": "Agent24", "valence": 3 }
+      ],
+      "finances": 7,
+      "workIncome": 3,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0,
+          "UnknownEvacuation": 0.2,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0,
+          "StormSurgeKeyword": 0,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0.2,
+          "Children": 0
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent24",
+      "motive": {
+        "accomplishment": 4,
+        "social": 3,
+        "physical": 3,
+        "emotional": 4,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 23, "yPos": 3 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 16, "yPos": 14 },
+      "relationships": [
+        { "type": "friend", "with": "Agent25", "valence": 3 }
+      ],
+      "finances": 7,
+      "workIncome": 3,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0,
+          "UnknownEvacuation": 0.2,
+          "DisasterPlan": 0.15,
+          "EmergencyKeyword": 0,
+          "StormSurgeKeyword": 0,
+          "KatrinaKeyword": 0.2,
+          "HasFamilyOutside": 0,
+          "Children": 0
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent25",
+      "motive": {
+        "accomplishment": 3,
+        "social": 4,
+        "physical": 4,
+        "emotional": 3,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 24, "yPos": 3 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 16, "yPos": 15 },
+      "relationships": [
+        { "type": "friend", "with": "Agent26", "valence": 3 }
+      ],
+      "finances": 7,
+      "workIncome": 3,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0,
+          "UnknownEvacuation": 0.2,
+          "DisasterPlan": 0.15,
+          "EmergencyKeyword": 0,
+          "StormSurgeKeyword": 0,
+          "KatrinaKeyword": 0.2,
+          "HasFamilyOutside": 0,
+          "Children": 0
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent26",
+      "motive": {
+        "accomplishment": 4,
+        "social": 3,
+        "physical": 3,
+        "emotional": 4,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 25, "yPos": 3 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 17, "yPos": 15 },
+      "relationships": [
+        { "type": "friend", "with": "Agent27", "valence": 3 }
+      ],
+      "finances": 7,
+      "workIncome": 3,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0,
+          "UnknownEvacuation": 0.2,
+          "DisasterPlan": 0.15,
+          "EmergencyKeyword": 0,
+          "StormSurgeKeyword": 0,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0,
+          "Children": 0
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent27",
+      "motive": {
+        "accomplishment": 3,
+        "social": 4,
+        "physical": 3,
+        "emotional": 3,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 26, "yPos": 3 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 17, "yPos": 16 },
+      "relationships": [
+        { "type": "friend", "with": "Agent28", "valence": 3 }
+      ],
+      "finances": 7,
+      "workIncome": 3,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0,
+          "UnknownEvacuation": 0.2,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0,
+          "StormSurgeKeyword": 0,
+          "KatrinaKeyword": 0,
+          "HasFamilyOutside": 0.2,
+          "Children": 0
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0
+        }
+      }
+    },
+    {
+      "name": "Agent28",
+      "motive": {
+        "accomplishment": 4,
+        "social": 3,
+        "physical": 4,
+        "emotional": 4,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 27, "yPos": 3 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 17, "yPos": 17 },
+      "relationships": [
+        { "type": "friend", "with": "Agent29", "valence": 3 }
+      ],
+      "finances": 7,
+      "workIncome": 3,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0,
+          "UnknownEvacuation": 0.2,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0,
+          "StormSurgeKeyword": 0,
+          "KatrinaKeyword": 0.2,
+          "HasFamilyOutside": 0.2,
+          "Children": 0
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0,
+          "NoGovernmentTrust": 0.3,
+          "Homeowner": 0,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0.5
+        }
+      }
+    },
+    {
+      "name": "Agent29",
+      "motive": {
+        "accomplishment": 3,
+        "social": 3,
+        "physical": 3,
+        "emotional": 4,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 28, "yPos": 3 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 18, "yPos": 17 },
+      "relationships": [
+        { "type": "friend", "with": "Agent30", "valence": 3 }
+      ],
+      "finances": 7,
+      "workIncome": 3,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0,
+          "UnknownEvacuation": 0.2,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0,
+          "StormSurgeKeyword": 0,
+          "KatrinaKeyword": 0.2,
+          "HasFamilyOutside": 0.2,
+          "Children": 0
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0,
+          "NoGovernmentTrust": 0.3,
+          "Homeowner": 0,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0.5
+        }
+      }
+    },
+    {
+      "name": "Agent30",
+      "motive": {
+        "accomplishment": 4,
+        "social": 4,
+        "physical": 3,
+        "emotional": 3,
+        "financial": 4
+      },
+      "currentLocation": { "xPos": 29, "yPos": 3 },
+      "occupiedCounter": 0,
+      "currentAction": "wait_action",
+      "destination": { "xPos": 18, "yPos": 18 },
+      "relationships": [
+        { "type": "friend", "with": "EmergencyManager", "valence": 3 }
+      ],
+      "finances": 7,
+      "workIncome": 3,
+      "IBOP": {
+        "difficultyEvacuating": {
+          "DisabilityMedicalNeeds": 0,
+          "65Plus": 0,
+          "Inaccessible": 0,
+          "NonNativeSpeaker": 0
+        },
+        "motivationToEvacuate": {
+          "StormSurge": 0,
+          "PriorEvacuation": 0,
+          "NoHurricaneExperience": 0,
+          "KnownEvacuation": 0,
+          "UnknownEvacuation": 0.2,
+          "DisasterPlan": 0,
+          "EmergencyKeyword": 0,
+          "StormSurgeKeyword": 0,
+          "KatrinaKeyword": 0.2,
+          "HasFamilyOutside": 0.2,
+          "Children": 0
+        },
+        "motivationToRemainHome": {
+          "PriorNoEvacuation": 0,
+          "NoGovernmentTrust": 0,
+          "Homeowner": 0,
+          "TerritorialMarkers": 0,
+          "ConspiracyKeyword": 0.5
+        }
+      }
+    }
+  ]
 }
