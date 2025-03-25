@@ -1,208 +1,332 @@
 [
-	{
-	  "Name": "Eleanor",
-	  "Motives": {
-		"accomplishment": 2,
-		"emotional": 3,
-		"financial": 1,
-		"social": 2,
-		"physical": 1
-	  },
-	  "Relationships": [
-		{
-		  "Type": "friend",
-		  "With": "Thomas",
-		  "Valence": 2
-		},
-		{
-		  "Type": "colleague",
-		  "With": "Oliver",
-		  "Valence": 1
-		}
-	  ]
-	},
-	{
-	  "Name": "Thomas",
-	  "Motives": {
-		"accomplishment": 3,
-		"emotional": 1,
-		"financial": 2,
-		"social": 2,
-		"physical": 1
-	  },
-	  "Relationships": [
-		{
-		  "Type": "friend",
-		  "With": "Eleanor",
-		  "Valence": 2
-		},
-		{
-		  "Type": "rival",
-		  "With": "Oliver",
-		  "Valence": -1
-		}
-	  ]
-	},
-	{
-	  "Name": "Oliver",
-	  "Motives": {
-		"accomplishment": 2,
-		"emotional": 2,
-		"financial": 3,
-		"social": 1,
-		"physical": 1
-	  },
-	  "Relationships": [
-		{
-		  "Type": "colleague",
-		  "With": "Eleanor",
-		  "Valence": 1
-		},
-		{
-		  "Type": "rival",
-		  "With": "Thomas",
-		  "Valence": -1
-		}
-	  ]
-	},
-	{
-	  "Name": "Fiona",
-	  "Motives": {
-		"accomplishment": 1,
-		"emotional": 3,
-		"financial": 2,
-		"social": 2,
-		"physical": 1
-	  },
-	  "Relationships": [
-		{
-		  "Type": "romantic-interest",
-		  "With": "Gabriel",
-		  "Valence": 3
-		},
-		{
-		  "Type": "friend",
-		  "With": "Gabriel",
-		  "Valence": 2
-		}
-	  ]
-	},
-	{
-	  "Name": "Gabriel",
-	  "Motives": {
-		"accomplishment": 2,
-		"emotional": 2,
-		"financial": 1,
-		"social": 3,
-		"physical": 1
-	  },
-	  "Relationships": [
-		{
-		  "Type": "romantic-interest",
-		  "With": "Fiona",
-		  "Valence": 3
-		},
-		{
-		  "Type": "friend",
-		  "With": "Fiona",
-		  "Valence": 2
-		}
-	  ]
-	},
-	{
-	  "Name": "Nora",
-	  "Motives": {
-		"accomplishment": 2,
-		"emotional": 3,
-		"financial": 1,
-		"social": 2,
-		"physical": 1
-	  },
-	  "Relationships": [
-		{
-		  "Type": "friend",
-		  "With": "Liam",
-		  "Valence": 2
-		}
-	  ]
-	},
-	{
-	  "Name": "Liam",
-	  "Motives": {
-		"accomplishment": 3,
-		"emotional": 2,
-		"financial": 1,
-		"social": 1,
-		"physical": 2
-	  },
-	  "Relationships": [
-		{
-		  "Type": "friend",
-		  "With": "Nora",
-		  "Valence": 2
-		}
-	  ]
-	},
-	{
-	  "Name": "Hannah",
-	  "Motives": {
-		"accomplishment": 1,
-		"emotional": 2,
-		"financial": 3,
-		"social": 2,
-		"physical": 1
-	  },
-	  "Relationships": [
-		{
-		  "Type": "colleague",
-		  "With": "John",
-		  "Valence": 1
-		},
-		{
-		  "Type": "friend",
-		  "With": "John",
-		  "Valence": 2
-		}
-	  ]
-	},
-	{
-	  "Name": "John",
-	  "Motives": {
-		"accomplishment": 2,
-		"emotional": 3,
-		"financial": 2,
-		"social": 1,
-		"physical": 1
-	  },
-	  "Relationships": [
-		{
-		  "Type": "colleague",
-		  "With": "Hannah",
-		  "Valence": 1
-		},
-		{
-		  "Type": "friend",
-		  "With": "Hannah",
-		  "Valence": 2
-		}
-	  ]
-	},
-	{
-	  "Name": "Isaac",
-	  "Motives": {
-		"accomplishment": 3,
-		"emotional": 2,
-		"financial": 1,
-		"social": 1,
-		"physical": 2
-	  },
-	  "Relationships": [
-		{
-		  "Type": "sibling",
-		  "With": "Rachel",
-		  "Valence": 3
-		}
-	  ]
-	}
-  ]
-  
+  {
+    "Name": "James",
+    "Group": "A",
+    "Motives": {
+      "Disability & Medical Needs": 0.67,
+      "65+": -0.1,
+      "Inaccessible": -0.45,
+      "Non-Native Speaker": 0.32
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "John",
+    "Group": "A",
+    "Motives": {
+      "Disability & Medical Needs": -0.12,
+      "65+": 0.23,
+      "Inaccessible": 0.56,
+      "Non-Native Speaker": -0.78
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Robert",
+    "Group": "A",
+    "Motives": {
+      "Disability & Medical Needs": -0.25,
+      "65+": 0.49,
+      "Inaccessible": 0.05,
+      "Non-Native Speaker": -0.34
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Michael",
+    "Group": "A",
+    "Motives": {
+      "Disability & Medical Needs": 0.34,
+      "65+": -0.67,
+      "Inaccessible": 0.12,
+      "Non-Native Speaker": -0.1
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "William",
+    "Group": "A",
+    "Motives": {
+      "Disability & Medical Needs": -0.56,
+      "65+": -0.1,
+      "Inaccessible": 0.44,
+      "Non-Native Speaker": 0.17
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "David",
+    "Group": "A",
+    "Motives": {
+      "Disability & Medical Needs": 0.23,
+      "65+": -0.45,
+      "Inaccessible": -0.3,
+      "Non-Native Speaker": -0.55
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Richard",
+    "Group": "A",
+    "Motives": {
+      "Disability & Medical Needs": -0.91,
+      "65+": 0.05,
+      "Inaccessible": 0.34,
+      "Non-Native Speaker": 0.12
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Joseph",
+    "Group": "A",
+    "Motives": {
+      "Disability & Medical Needs": -0.25,
+      "65+": 0.15,
+      "Inaccessible": -0.12,
+      "Non-Native Speaker": 0.88
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Thomas",
+    "Group": "A",
+    "Motives": {
+      "Disability & Medical Needs": -0.33,
+      "65+": 0.47,
+      "Inaccessible": -0.56,
+      "Non-Native Speaker": -0.22
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Charles",
+    "Group": "A",
+    "Motives": {
+      "Disability & Medical Needs": 0.50,
+      "65+": 0.76,
+      "Inaccessible": -0.11,
+      "Non-Native Speaker": 0.09
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Christopher",
+    "Group": "A",
+    "Motives": {
+      "Disability & Medical Needs": 0.88,
+      "65+": -0.34,
+      "Inaccessible": 0.23,
+      "Non-Native Speaker": -0.67
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Daniel",
+    "Group": "A",
+    "Motives": {
+      "Disability & Medical Needs": -0.44,
+      "65+": 0.62,
+      "Inaccessible": -0.3,
+      "Non-Native Speaker": 0.03
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Matthew",
+    "Group": "A",
+    "Motives": {
+      "Disability & Medical Needs": 0.15,
+      "65+": -0.11,
+      "Inaccessible": 0.07,
+      "Non-Native Speaker": -0.1
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Anthony",
+    "Group": "A",
+    "Motives": {
+      "Disability & Medical Needs": -0.72,
+      "65+": 0.28,
+      "Inaccessible": -0.85,
+      "Non-Native Speaker": 0.40
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Mark",
+    "Group": "A",
+    "Motives": {
+      "Disability & Medical Needs": 0.05,
+      "65+": 0.99,
+      "Inaccessible": -0.44,
+      "Non-Native Speaker": -0.55
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Donald",
+    "Group": "B",
+    "Motives": {
+      "Disability & Medical Needs": -0.19,
+      "65+": 0.66,
+      "Inaccessible": 0.12,
+      "Non-Native Speaker": 0.44
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Steven",
+    "Group": "B",
+    "Motives": {
+      "Disability & Medical Needs": 0.21,
+      "65+": -0.39,
+      "Inaccessible": -0.3,
+      "Non-Native Speaker": 0.70
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Paul",
+    "Group": "B",
+    "Motives": {
+      "Disability & Medical Needs": 0.47,
+      "65+": 0.14,
+      "Inaccessible": -0.66,
+      "Non-Native Speaker": -0.20
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Andrew",
+    "Group": "B",
+    "Motives": {
+      "Disability & Medical Needs": -0.82,
+      "65+": 0.31,
+      "Inaccessible": 0.49,
+      "Non-Native Speaker": 0.06
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Joshua",
+    "Group": "B",
+    "Motives": {
+      "Disability & Medical Needs": 0.33,
+      "65+": -0.1,
+      "Inaccessible": -0.27,
+      "Non-Native Speaker": -0.40
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Karen",
+    "Group": "B",
+    "Motives": {
+      "Disability & Medical Needs": 0.72,
+      "65+": -0.59,
+      "Inaccessible": 0.22,
+      "Non-Native Speaker": 0.88
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Nancy",
+    "Group": "B",
+    "Motives": {
+      "Disability & Medical Needs": -0.44,
+      "65+": 0.51,
+      "Inaccessible": 0.07,
+      "Non-Native Speaker": 0.25
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Lisa",
+    "Group": "B",
+    "Motives": {
+      "Disability & Medical Needs": 0.05,
+      "65+": -0.73,
+      "Inaccessible": -0.50,
+      "Non-Native Speaker": 0.62
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Betty",
+    "Group": "B",
+    "Motives": {
+      "Disability & Medical Needs": -0.31,
+      "65+": 0.47,
+      "Inaccessible": 0.83,
+      "Non-Native Speaker": -0.66
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Sandra",
+    "Group": "B",
+    "Motives": {
+      "Disability & Medical Needs": 0.77,
+      "65+": -0.24,
+      "Inaccessible": 0.37,
+      "Non-Native Speaker": 0.19
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Ashley",
+    "Group": "B",
+    "Motives": {
+      "Disability & Medical Needs": -0.56,
+      "65+": 0.92,
+      "Inaccessible": -0.3,
+      "Non-Native Speaker": 0.45
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Dorothy",
+    "Group": "B",
+    "Motives": {
+      "Disability & Medical Needs": 0.23,
+      "65+": -0.15,
+      "Inaccessible": 0.66,
+      "Non-Native Speaker": 0.53
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Kimberly",
+    "Group": "B",
+    "Motives": {
+      "Disability & Medical Needs": -0.47,
+      "65+": 0.37,
+      "Inaccessible": -0.59,
+      "Non-Native Speaker": -0.1
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Emily",
+    "Group": "B",
+    "Motives": {
+      "Disability & Medical Needs": 0.91,
+      "65+": -0.28,
+      "Inaccessible": 0.42,
+      "Non-Native Speaker": 0.16
+    },
+    "Relationships": []
+  },
+  {
+    "Name": "Donna",
+    "Group": "B",
+    "Motives": {
+      "Disability & Medical Needs": -0.62,
+      "65+": 0.14,
+      "Inaccessible": -0.77,
+      "Non-Native Speaker": -0.34
+    },
+    "Relationships": []
+  }
+]
