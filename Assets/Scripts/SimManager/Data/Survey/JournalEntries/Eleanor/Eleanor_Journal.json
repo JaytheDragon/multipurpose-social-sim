@@ -1,0 +1,20 @@
+{
+    "conversations": [
+        {
+            "type": "communication",
+            "withAgent": "Oliver",
+            "topic": "Communication action executed",
+            "turns": [
+                {
+                    "speaker": "Eleanor",
+                    "dialog": "Hello Oliver, communication finished."
+                },
+                {
+                    "speaker": "Oliver",
+                    "dialog": "Hello Eleanor, communication finished."
+                }
+            ],
+            "timestamp": "Tick 7264"
+        }
+    ]
+}
