@@ -207,7 +207,9 @@ namespace SimManager.SimulationManager
             initiator.CurrentAction.Clear();
             initiator.CurrentAction.AddFirst(communicateAction);
 
-            // 4) Log the communication to the journal (if an AgentJournalManager exists in the scene)
+            // 4) (Optional) Additional handling for target agent can go here.
+
+            // 5) Log the communication to the journal (if an AgentJournalManager exists in the scene)
             AgentJournalManager journalManager = UnityEngine.Object.FindObjectOfType<AgentJournalManager>();
             if (journalManager != null)
             {
@@ -218,7 +220,6 @@ namespace SimManager.SimulationManager
                 };
 
                 journalManager.AddConversation("communication", targetName, topic, turns, System.DateTime.Now);
-                UnityEngine.Debug.Log($"Logged conversation between {initiatorName} and {targetName} about {topic}.");
             }
             else
             {

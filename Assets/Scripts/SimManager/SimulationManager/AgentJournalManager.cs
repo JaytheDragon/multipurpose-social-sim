@@ -9,18 +9,18 @@ using UnityEditor;
 [Serializable]
 public class Turn
 {
-    public string speaker;  // e.g., "Eleanor"
-    public string dialog;   // e.g., "Hello, how are you?"
+    public string speaker;  // Example: "Eleanor"
+    public string dialog;   // Example: "Hello, how are you?"
 }
 
 [Serializable]
 public class Conversation
 {
-    public string type;       // e.g., "communication"
-    public string withAgent;  // e.g., "Thomas"
-    public string topic;      // e.g., "Evacuation Plans"
+    public string type;       // Example: "communication"
+    public string withAgent;  // Example: "Thomas"
+    public string topic;      // Example: "Evacuation Plans"
     public List<Turn> turns;
-    public string timestamp;  // e.g., "2025-03-25 14:05:00"
+    public string timestamp;  // Example: "2025-03-25 14:05:00"
 }
 
 [Serializable]
@@ -44,6 +44,7 @@ public class AgentJournalManager : MonoBehaviour
 
     private void Awake()
     {
+<<<<<<< HEAD
         // Save the global journal in the "agentJournals" folder.
         string directoryPath = Path.Combine(Application.dataPath, "Scripts", "SimManager", "Data", "Survey", "agentJournals");
         if (!Directory.Exists(directoryPath))
@@ -56,11 +57,15 @@ public class AgentJournalManager : MonoBehaviour
         // Alternatively, use persistentDataPath:
         // journalFilePath = Path.Combine(Application.persistentDataPath, journalFileName);
 
+=======
+        // Use persistentDataPath so it works in builds (this works in Editor too)
+        journalFilePath = Path.Combine(Application.persistentDataPath, journalFileName);
+>>>>>>> parent of d6c20e5 ([implementation] keeps another journal)
         LoadJournal();
     }
 
     /// <summary>
-    /// Loads the journal from JSON if it exists; otherwise, creates a new journal.
+    /// Loads the journal from JSON if it exists; otherwise creates a new one.
     /// </summary>
     private void LoadJournal()
     {
@@ -108,13 +113,15 @@ public class AgentJournalManager : MonoBehaviour
         };
 
         agentJournal.conversations.Add(conversation);
-
-        Debug.Log($"Added conversation: {type} with {withAgent} about {topic} at {timeStamp}");
         SaveJournal();
     }
 
     /// <summary>
+<<<<<<< HEAD
     /// Debug utility: prints the entire global journal to the Console.
+=======
+    /// Debug utility: prints the journal to the Console.
+>>>>>>> parent of d6c20e5 ([implementation] keeps another journal)
     /// </summary>
     public void PrintJournalToConsole()
     {
