@@ -74,3 +74,5 @@ crashlytics-build.properties
 Assets/Scripts/LLM/wizardLM-7B.ggmlv3.q4_0.bin
 
 .fake
+Assets/Scripts/SimManager/Data/Survey/JournalEntries/Eleanor/Eleanor_Journal.json.meta
+Assets/Scripts/SimManager/SimulationManager/AgentJournalManager.cs

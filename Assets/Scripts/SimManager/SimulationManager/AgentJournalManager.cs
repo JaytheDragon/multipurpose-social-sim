@@ -45,6 +45,7 @@ public class AgentJournalManager : MonoBehaviour
     private void Awake()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Save the global journal in the "agentJournals" folder.
         string directoryPath = Path.Combine(Application.dataPath, "Scripts", "SimManager", "Data", "Survey", "agentJournals");
         if (!Directory.Exists(directoryPath))
@@ -57,6 +58,10 @@ public class AgentJournalManager : MonoBehaviour
         // Alternatively, use persistentDataPath:
         // journalFilePath = Path.Combine(Application.persistentDataPath, journalFileName);
 
+=======
+        // Use persistentDataPath so it works in builds (this works in Editor too)
+        journalFilePath = Path.Combine(Application.persistentDataPath, journalFileName);
+>>>>>>> parent of d6c20e5 ([implementation] keeps another journal)
 =======
         // Use persistentDataPath so it works in builds (this works in Editor too)
         journalFilePath = Path.Combine(Application.persistentDataPath, journalFileName);
@@ -118,7 +123,11 @@ public class AgentJournalManager : MonoBehaviour
 
     /// <summary>
 <<<<<<< HEAD
+<<<<<<< HEAD
     /// Debug utility: prints the entire global journal to the Console.
+=======
+    /// Debug utility: prints the journal to the Console.
+>>>>>>> parent of d6c20e5 ([implementation] keeps another journal)
 =======
     /// Debug utility: prints the journal to the Console.
 >>>>>>> parent of d6c20e5 ([implementation] keeps another journal)
