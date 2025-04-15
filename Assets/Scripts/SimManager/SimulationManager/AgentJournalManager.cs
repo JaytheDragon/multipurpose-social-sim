@@ -44,14 +44,14 @@ public class AgentJournalManager : MonoBehaviour
 
     private void Awake()
     {
-        // If you want to save in Assets/Scripts/SimManager/Data/Survey:
+        // Save the global journal in the "agentJournals" folder.
         string directoryPath = Path.Combine(Application.dataPath, "Scripts", "SimManager", "Data", "Survey", "agentJournals");
         if (!Directory.Exists(directoryPath))
         {
             Directory.CreateDirectory(directoryPath);
         }
         journalFilePath = Path.Combine(directoryPath, journalFileName);
-        Debug.Log("Journal will be saved at: " + journalFilePath);
+        Debug.Log("Global journal will be saved at: " + journalFilePath);
         
         // Alternatively, use persistentDataPath:
         // journalFilePath = Path.Combine(Application.persistentDataPath, journalFileName);
@@ -138,15 +138,15 @@ public class AgentJournalManager : MonoBehaviour
     /// <summary>
     /// Saves the given agent's personal journal to a unique JSON file.
     /// Each agent's journal is stored in:
-    /// Assets/Scripts/SimManager/Data/Survey/JournalEntries/[AgentName]/[AgentName]_Journal.json
+    /// Assets/Scripts/SimManager/Data/Survey/agentJournals/[AgentName]/[AgentName]_Journal.json
     /// Journals reset every run.
     /// </summary>
     /// <param name="agentName">The agent's name.</param>
     /// <param name="journal">The agent's personal AgentJournal object.</param>
     public void SavePersonalJournalForAgent(string agentName, AgentJournal journal)
     {
-        // Define the base folder for journals (under the existing Survey path).
-        string baseFolder = Path.Combine(Application.dataPath, "Scripts", "SimManager", "Data", "Survey", "JournalEntries");
+        // Define the base folder for personal agent journals.
+        string baseFolder = Path.Combine(Application.dataPath, "Scripts", "SimManager", "Data", "Survey", "agentJournals");
         if (!Directory.Exists(baseFolder))
         {
             Directory.CreateDirectory(baseFolder);
@@ -159,7 +159,7 @@ public class AgentJournalManager : MonoBehaviour
             Directory.CreateDirectory(agentFolder);
         }
 
-        // Build the file path: e.g., Assets/Scripts/SimManager/Data/Survey/JournalEntries/Alice/Alice_Journal.json
+        // Build the file path: e.g., Assets/Scripts/SimManager/Data/Survey/agentJournals/Eleanor/Eleanor_Journal.json
         string filePath = Path.Combine(agentFolder, $"{agentName}_Journal.json");
 
         try
